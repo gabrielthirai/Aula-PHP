@@ -1,0 +1,3 @@
+<?php
+    $meutoken = "ABC123!"
+?>
