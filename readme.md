@@ -53,3 +53,57 @@ Ele redireciona o elemento para outro local.
 header("Location: /menu.php");
 ```
 ele vai redirecionar para o menu.php
+
+## Array
+
+Para criar um array, pode-se chamar uma função array
+
+```
+    $frutas = array();
+```
+
+Ou do jeito mais habitual
+
+```
+    $legumes = [];
+```
+
+Com a função array, para a criação do array, pode ser feito dessa forma
+
+```
+    $lanches = array("x-egg", "x-tudo","x-salada");
+```
+
+Você pode definir a posição do array e do que estiver dentro dele
+
+```
+    $frutas[0] = "ameixa";
+    $frutas[1] = "goiaba";
+    $frutas[2] = "cajamanga";
+```
+
+Ou não definir, ai nesse caso o proprio php atribui as posições
+
+```
+    $legumes[] = "chuchu";
+    $legumes[] = "abobrinha";
+    $legumes[] = "batata";
+```
+
+## Foreach
+
+O Foreach inspeciona o array e quebra em 2 elemento, um que é a chave e o outro que é o valor.
+
+```
+    foreach($bebidas as $nome => $valor){
+        echo "$nome com $valor quantidade <br>";
+    }
+```
+
+## Rand
+
+Essa função vai dar um numero randomicamente entre os valores informados
+
+```
+        $sorteio[$i] = rand(1,60);
+```
