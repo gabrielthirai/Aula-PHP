@@ -1,4 +1,5 @@
-### criptografia
+#PHP
+## criptografia
 ```
 $senha = password_hash($senha, PASSWORD_BCRYPT);
 ```
@@ -20,3 +21,35 @@ replace troca uma string (meutoken), pelo conteudo existente na variável $meuto
 ## include
 
 vai importar o config.php que está dentro da pasta config.
+
+## variavel
+
+para criar uma variavel se usa o $nome.
+```
+    $cpf = $_REQUEST['cpf'];
+```
+### REQUEST 
+é universal, nesse exemplo ele vai pegar o nome da class que criei no html.
+
+## Config
+
+criamos uma variavel que vai receber caracteres especiais, para deixar a senha mais forte.
+
+```
+    $parteForte = "&%$!2KÇ";
+```
+
+Depois chamamos em login.php para juntar com a senha.
+```
+    $senha = $senha . $parteForte;
+    $senha = md5($senha);
+```
+
+## header 
+
+Ele redireciona o elemento para outro local.
+
+```
+header("Location: /menu.php");
+```
+ele vai redirecionar para o menu.php

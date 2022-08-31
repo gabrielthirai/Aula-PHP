@@ -1,3 +1,4 @@
 <?php
-    $meutoken = "ABC123!"
+    $meutoken = "ABC123!";
+    $parteForte = "&%$!2KÇ";
 ?>
