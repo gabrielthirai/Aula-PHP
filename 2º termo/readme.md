@@ -1,4 +1,4 @@
-#PHP
+# PHP
 ## criptografia
 ```
 $senha = password_hash($senha, PASSWORD_BCRYPT);

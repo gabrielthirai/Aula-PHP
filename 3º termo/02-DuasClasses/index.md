@@ -28,3 +28,12 @@ Nesse caso passaremos o parametro que foi definido em Usuario.php, atribuindo co
 ```
 
 Em Usuario.php, definimos o getDados() para retornar os dados que foram recolhidos pelo objeto.
+
+## Colocando os dados em formato json
+
+```
+    $json = json_encode($dados);
+    $arq = new ArquivoJson($dados["cpf"],$json);
+```
+
+nessas linhas, tudo o que entrar em arq e for cpf vai retornar um arquivo json.
